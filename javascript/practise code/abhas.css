@@ -1,0 +1,582 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+#sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+nav {
+    background-color: orange;
+    height: 100px;
+    width: 100%;
+}
+nav ul {
+    float: right;
+    margin-right: 55px;
+}
+nav ul li a {
+    color: black;
+    font-size: 23px;
+    padding: 7px 13px;
+    text-decoration: none;
+    text-transform: uppercase;
+    border-radius: 2px;
+}
+
+nav ul li {
+    display: inline-block;
+    line-height: 80px;
+    margin: 0 5px;
+}
+nav ul li a i {
+    font-size: 15px;
+}
+label.logo {
+    color: white;
+    font-size: 35px;
+    line-height: 80px;
+    padding: 0 100px;
+    font-family: cursive;
+    font-weight: bold;
+}
+.checkButton {
+    font-size: 30px;
+    color: white;
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+}
+.mycheckbox {
+    display: none;
+}
+
+@media screen and (max-width: 952px) {
+    label.logo {
+        font-size: 30px;
+        padding-left: 50px;
+    }
+    nav ul li a {
+        font-size: 16px;
+    }
+}
+
+@media screen and (max-width: 858px) {
+    .checkButton {
+        display: block;
+    }
+
+    ul {
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background-color: pink;
+        top: 80px;
+        left: 0;
+        text-align: center;
+        transition: all.5s;
+    }
+    nav ul li {
+        display: block;
+        margin: 50px 0;
+        line-height: 30px;
+    }
+    nav ul li a {
+        font-size: 20px;
+        color: black;
+    }
+    .mycheckbox :checked ~ ul {
+        left: 0;
+    }
+}
+
+a.active,
+a:hover {
+    transition: 0.5s;
+    background: white;
+    border-radius: 1ch;
+}
+
+img {
+    width: 100%;
+    height: 600px;
+}
+.heading {
+    position: absolute;
+    /*top: 40%;*/
+    top: 35%;
+    color: rgba(252, 210, 1, 0.998);
+    /*margin-left: 14%;*/
+    margin-left: 5%;
+    font-size: 35px;
+    font-family: cursive;
+}
+.heading p {
+    font-size: 20px;
+    color: white;
+}
+#hirebtn {
+    width: 20%;
+    height: 50px;
+    font-size: large;
+    color: black;
+    background-color: white;
+    border-radius: 20px;
+    font-family: cursive;
+}
+#hirebtn:hover {
+    background-color: #4070f1;
+}
+
+#devbtn {
+    width: 30%;
+    height: 50px;
+    font-size: large;
+    color: black;
+    background-color: orange;
+    border-radius: 20px;
+    font-family: cursive;
+}
+#devbtn:hover {
+    background-color: lightskyblue;
+}
+#formcontainer {
+    background-color: rgba(0, 0, 0, 0.565);
+    top: 25%;
+    position: absolute;
+    margin-left: 60%;
+    padding-top: 90px;
+    padding-bottom: 90px;
+    padding-left: 50px;
+    padding-right: 50px;
+    border-radius: 2ch;
+}
+.head2 {
+    margin: 0px 0px 10px 0px;
+    color: orange;
+    font-size: 40px;
+    font-family: cursive;
+}
+input {
+    width: 200px;
+    margin: 10px 0px;
+    padding: 10px;
+    margin-top: 35px;
+    background-color: rgba(0, 0, 0, 0.645);
+    color: white;
+    font-family: cursive;
+    font-size: larger;
+}
+input[type="submit"] {
+    width: 222px;
+    background-color: orange;
+    border: 0px;
+    color: black;
+    font-family: cursive;
+    font-size: larger;
+    border-radius: 1ch;
+}
+.error {
+    color: red;
+    text-align: left;
+    margin: 0px;
+}
+/*.fullcard {
+    min-height: 100vh;
+    margin-left: 10%;
+    margin-top: 40px;
+    margin-bottom: 20px;
+}
+#firstimg {
+    height: 70%;
+    width: 30%;
+    border-radius: 1ch;
+}
+.card1 {
+    background-color: rgba(245, 245, 245, 0.862);
+    margin-right: 70%;
+    padding-bottom: 20px;
+    border-radius: 1ch;
+    font-family: cursive;
+}
+.cardbtn {
+    margin-top: 20px;
+    height: 30px;
+    width: 30%;
+    border-radius: 1ch;
+    font-size: larger;
+    font-family: cursive;
+    background-color: orange;
+}
+.cardbtn:hover {
+    background: orchid;
+}
+.container1 {
+    position: absolute;
+    top: 155%;
+    left: 60%;
+    width: 90%;
+    padding-bottom: 50px;
+}
+
+#secondimg {
+    height: 80%;
+    width: 30%;
+    border-radius: 1ch;
+}
+.card2 {
+    background-color: rgba(245, 245, 245, 0.862);
+    margin-right: 70%;
+    padding-bottom: 20px;
+    border-radius: 1ch;
+    font-family: cursive;
+}
+.cardbutton {
+    margin-top: 20px;
+    height: 30px;
+    width: 30%;
+    border-radius: 1ch;
+    font-size: larger;
+    font-family: cursive;
+    background-color: orange;
+}
+.cardbutton:hover {
+    background: orchid;
+}
+
+.third {
+    background-color: whitesmoke;
+    border-radius: 3ch;
+}*/
+.profilehead {
+    text-align: center;
+    align-items: center;
+    padding-top: 20px;
+    font-size: 40px;
+    font-family: cursive;
+}
+.profileimg {
+    height: 30%;
+    width: 40%;
+    margin-left: 20px;
+    margin-top: 50px;
+    object-fit: cover;
+
+    border-radius: 50%;
+    border: 4px solid #4070f1;
+}
+.profilepara {
+    margin-left: 60%;
+    top: 133%;
+    position: absolute;
+    font-size: 16px;
+    font-family: cursive;
+}
+/*.fourth {
+    background-color: whitesmoke;
+    border-radius: 3ch;
+    margin-top: 50px;
+}
+.profilehead1 {
+    text-align: center;
+    align-items: center;
+    padding-top: 20px;
+    font-size: 40px;
+    font-family: cursive;
+}
+.profileimg1 {
+    height: 30%;
+    width: 40%;
+
+    margin-left: 20px;
+    margin-top: 50px;
+    object-fit: cover;
+
+    border-radius: 50%;
+    border: 4px solid #4070f1;
+}
+.profilepara1 {
+    margin-left: 60%;
+    top: 375%;
+    position: absolute;
+    font-size: 16px;
+    font-family: cursive;
+}*/
+.customer-review {
+    text-align: center;
+    margin-top: 30px;
+    font-family: cursive;
+    font-size: 30px;
+}
+
+.nextcard {
+    background-color: whitesmoke;
+    margin-left: 90px;
+    margin-right: 70%;
+    margin-bottom: 40px;
+    margin-top: 50px;
+    padding-top: 60px;
+    padding-bottom: 60px;
+    padding-left: 40px;
+    padding-right: 40px;
+    font-family: cursive;
+    border-radius: 1ch;
+}
+.stars {
+    height: 70px;
+    width: 90px;
+}
+.nextcard1 {
+    background-color: whitesmoke;
+    margin-left: 35%;
+    margin-right: 42%;
+    margin-bottom: 20%;
+    padding-top: 60px;
+    padding-bottom: 60px;
+    padding-left: 40px;
+    padding-right: 40px;
+    top: 217%;
+    position: absolute;
+    font-family: cursive;
+    border-radius: 1ch;
+}
+.nextcard2 {
+    background-color: whitesmoke;
+    margin-left: 30%;
+    margin-right: 14%;
+    margin-bottom: 20%;
+    padding-top: 60px;
+    padding-bottom: 60px;
+    padding-left: 40px;
+    padding-right: 40px;
+    left: 33%;
+    position: absolute;
+    top: 217%;
+    font-family: cursive;
+    border-radius: 1ch;
+}
+.ourproject {
+    text-align: center;
+    padding-bottom: 20px;
+    font-family: cursive;
+    font-size: 30px;
+}
+.project {
+    background-color: lightblue;
+    padding-top: 50px;
+    border-radius: 2ch;
+    padding-bottom: 50px;
+}
+.img1:hover {
+    scale: 0.8;
+    opacity: 0.7;
+}
+.img1 {
+    height: 22%;
+    width: 30%;
+    margin-left: 30px;
+    border-radius: 2ch;
+}
+.img2:hover {
+    scale: 0.8;
+    opacity: 0.7;
+}
+.img2 {
+    height: 20%;
+    width: 30%;
+    margin-left: 30px;
+    border-radius: 2ch;
+}
+.img3:hover {
+    scale: 0.8;
+    opacity: 0.7;
+}
+.img3 {
+    height: 20%;
+    width: 30%;
+    margin-left: 30px;
+    border-radius: 2ch;
+}
+.img4:hover {
+    scale: 0.8;
+    opacity: 0.7;
+}
+.img4 {
+    height: 20%;
+    width: 30%;
+    margin-left: 30px;
+    margin-top: 20px;
+    border-radius: 2ch;
+}
+.img5:hover {
+    scale: 0.8;
+    opacity: 0.7;
+}
+.img5 {
+    height: 20%;
+    width: 30%;
+    margin-left: 30px;
+    margin-top: 20px;
+    border-radius: 2ch;
+}
+.img6:hover {
+    scale: 0.8;
+    opacity: 0.7;
+}
+.img6 {
+    height: 20%;
+    width: 30%;
+    margin-left: 30px;
+    margin-top: 20px;
+
+    border-radius: 2ch;
+}
+.para1 {
+    margin-left: 12%;
+    position: absolute;
+    top: 322%;
+    color: white;
+    font-family: cursive;
+    font-size: 30px;
+}
+.para2 {
+    margin-left: 45%;
+    position: absolute;
+    top: 322%;
+    color: white;
+    font-family: cursive;
+    font-size: 30px;
+}
+.para3 {
+    margin-left: 76%;
+    position: absolute;
+    top: 322%;
+    color: white;
+    font-family: cursive;
+    font-size: 30px;
+}
+.para4 {
+    margin-left: 12%;
+    position: absolute;
+    top: 371%;
+    color: white;
+    font-family: cursive;
+    font-size: 30px;
+}
+.para5 {
+    margin-left: 45%;
+    position: absolute;
+    top: 371%;
+    color: white;
+    font-family: cursive;
+    font-size: 30px;
+}
+.para6 {
+    margin-left: 76%;
+    position: absolute;
+    top: 371%;
+    color: white;
+    font-family: cursive;
+    font-size: 30px;
+}
+.social {
+    padding-top: 30px;
+    padding-bottom: 40px;
+    box-sizing: border-box;
+    background-color: rgba(128, 128, 128, 0.655);
+    border-radius: 1ch;
+}
+
+.social h2 {
+    text-align: center;
+    margin-top: 20px;
+    font-family: cursive;
+    font-size: 30px;
+    margin-bottom: 20px;
+    color: rgba(0, 0, 0, 0.88);
+}
+.social button {
+    margin-top: 50px;
+    margin-left: 38%;
+    height: 50%;
+    width: 20%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-family: cursive;
+    font-size: 20px;
+    margin-bottom: 10px;
+    border-radius: 2ch;
+}
+.social button:hover {
+    background-color: #4070f1;
+}
+
+#Gmail {
+    position: absolute;
+    top: 422%;
+    left: 51%;
+    font-size: 30px;
+}
+#github {
+    position: absolute;
+    top: 422%;
+    margin-left: 47%;
+    font-size: 30px;
+}
+#instagram {
+    position: absolute;
+    top: 422%;
+    margin-left: 43%;
+    font-size: 30px;
+}
+
+.footer {
+    background-color: #051430f4;
+    color: #fefefe;
+    position: static;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.footer .content {
+    display: flex;
+    justify-content: space-evenly;
+    margin: 1.5rem;
+}
+
+.footer .content p {
+    margin-bottom: 1.3rem;
+}
+
+.footer .content a {
+    text-decoration: none;
+    /*color: #fefefe;*/
+    color: grey;
+    font-family: cursive;
+}
+
+.footer .content a:hover {
+    border-bottom: 1px solid #971717;
+}
+
+.footer .content h4 {
+    margin-bottom: 1.3rem;
+    font-size: 19px;
+}
+
+footer {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+footer hr {
+    margin: 2rem 0;
+}
