@@ -1,6 +1,6 @@
 # Modern To-Do List
 
-A simple to-do app built with React and Tailwind CSS.
+A modern to-do app built with React and Tailwind CSS. And Full responsive .
 
 ## Run locally
 
